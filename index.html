@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0b12" />
+  <title>Dla Mai ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+
+  <header class="topbar">
+    <div class="brand">dla Mai <span>♡</span></div>
+    <div class="progress-wrap" aria-label="Postęp historii">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <span id="progressText">0 / 7</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- START -->
+    <section class="screen active" id="screen-0">
+      <div class="hero">
+        <p class="eyebrow">mały kawałek internetu tylko dla Ciebie</p>
+        <h1>Hej, <span class="script">Myszka.</span></h1>
+        <p class="lead">
+          Nie umiałem zebrać tego wszystkiego w jedną wiadomość.
+          Więc zrobiłem coś, co możesz odkrywać po kawałku.
+        </p>
+
+        <div class="tiny-note">
+          niczego nie musisz tutaj rozumieć od razu<br>
+          po prostu klikaj dalej
+        </div>
+
+        <button class="primary-btn" data-next>
+          zacznij
+          <span>→</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- 1 -->
+    <section class="screen" id="screen-1">
+      <div class="story-shell">
+        <p class="step-label">01, od czego to się zaczęło</p>
+        <h2>Kiedyś byłaś po prostu <span>Mimiś po drugiej stronie ekranu.</span></h2>
+        <p class="story-copy">
+          Znamy się dopiero około miesiąca, a tak naprawdę dużo piszemy dopiero od niedawna.
+          I chyba właśnie dlatego sam nie do końca rozumiem, jak szybko zaczęłaś znaczyć dla mnie więcej.
+        </p>
+
+        <button class="reveal-card" data-reveal>
+          <span class="reveal-label">kliknij, żeby zobaczyć co zauważyłem pierwsze</span>
+          <span class="reveal-content">
+            Twoje dobre serce. To, że jesteś uczuciowa. I przede wszystkim to,
+            że naprawdę się mną zainteresowałaś, nie tak „z grzeczności”, tylko naprawdę.
+          </span>
+        </button>
+
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="screen" id="screen-2">
+      <div class="story-shell">
+        <p class="step-label">02, moment, który został ze mną</p>
+        <h2>Ten pierwszy wiersz.</h2>
+        <p class="story-copy">
+          Napisałem go trochę zestresowany, trochę nie wiedząc, czy nie przesadzam.
+          A potem przyszła od Ciebie głosówka.
+        </p>
+
+        <button class="memory-box" data-reveal>
+          <span class="memory-icon">♫</span>
+          <span class="memory-main">„odsłuchaj wspomnienie”</span>
+          <span class="memory-sub">to nie jest prawdziwe nagranie, tylko jedno wspomnienie, którego nie chcę zgubić</span>
+          <span class="reveal-content">
+            Płakałaś ze wzruszenia. I serio, chyba wtedy pierwszy raz dotarło do mnie,
+            że moje słowa potrafią coś dla Ciebie znaczyć. Ten moment siedzi mi w głowie do teraz.
+          </span>
+        </button>
+
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="screen" id="screen-3">
+      <div class="story-shell wide">
+        <p class="step-label">03, co w Tobie lubię</p>
+        <h2>Nie umiem wybrać jednej rzeczy.</h2>
+        <p class="story-copy">
+          Więc zamiast wybierać, kliknij po kolei.
+        </p>
+
+        <div class="qualities-grid" id="qualitiesGrid">
+          <button class="quality-card" data-quality>
+            <span>01</span>
+            <strong>Twój uśmiech</strong>
+            <p>ten, który potrafi mi się przypomnieć bez żadnego powodu</p>
+          </button>
+
+          <button class="quality-card" data-quality>
+            <span>02</span>
+            <strong>Twoje oczy</strong>
+            <p>tak, wiem, brzmi banalnie, ale trudno mi udawać, że ich nie zauważam</p>
+          </button>
+
+          <button class="quality-card" data-quality>
+            <span>03</span>
+            <strong>Sposób, w jaki do mnie mówisz</strong>
+            <p>jest w nim coś, co sprawia, że chcę słuchać jeszcze dłużej</p>
+          </button>
+
+          <button class="quality-card" data-quality>
+            <span>04</span>
+            <strong>To, że jesteś</strong>
+            <p>że mogę pisać z Tobą o wszystkim i o niczym i nadal chcę więcej</p>
+          </button>
+
+          <button class="quality-card special" data-quality>
+            <span>05</span>
+            <strong>Spokój</strong>
+            <p>bo przy Tobie dostaję coś, czego prawie nikt inny nie potrafi mi dać</p>
+          </button>
+        </div>
+
+        <p class="unlock-note" id="qualitiesHint">odkryj wszystkie 5</p>
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="screen" id="screen-4">
+      <div class="story-shell">
+        <p class="step-label">04, nocne rozmowy</p>
+        <h2>Lubię te godziny, w których <span>powinniśmy już spać.</span></h2>
+        <p class="story-copy">
+          Bo wtedy jakoś wychodzi wszystko naraz.
+          Trochę głupot, trochę wsparcia, trochę kręcenia się wokół tematów,
+          których oboje jeszcze nie chcemy nazywać zbyt głośno.
+        </p>
+
+        <div class="chat-scene">
+          <button class="bubble left" data-reveal>
+            <span class="small">Maja</span>
+            kliknij mnie
+            <span class="reveal-content">„śpisz?”</span>
+          </button>
+
+          <button class="bubble right" data-reveal>
+            <span class="small">Adam</span>
+            też kliknij
+            <span class="reveal-content">„miałem iść… ale zostałem”</span>
+          </button>
+
+          <button class="bubble center" data-reveal>
+            <span class="small">prawda</span>
+            jeszcze jedno
+            <span class="reveal-content">
+              Bo czasem wystarczy, że po prostu z Tobą piszę i wszystko robi się trochę cichsze.
+            </span>
+          </button>
+        </div>
+
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="screen" id="screen-5">
+      <div class="story-shell">
+        <p class="step-label">05, tego trochę się boję</p>
+        <h2>Nie dlatego, że coś jest nie tak.</h2>
+
+        <div class="fear-lines">
+          <button data-reveal>bo znamy się krótko</button>
+          <button data-reveal>bo jeszcze się nie spotkaliśmy</button>
+          <button data-reveal>bo jesteśmy na dwóch krańcach Polski</button>
+          <button data-reveal>bo czasem myślę, że to po prostu może być za wcześnie</button>
+        </div>
+
+        <div class="deep-reveal" id="fearFinal">
+          <p>
+            Ale mimo tego wszystkiego nie chcę udawać, że nic nie czuję.
+            Nie wiem jeszcze, co z tego będzie. I może właśnie nie musimy jeszcze wiedzieć.
+          </p>
+        </div>
+
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="screen" id="screen-6">
+      <div class="story-shell">
+        <p class="step-label">06, gdyby dystansu nie było</p>
+        <h2>Nie potrzebowałbym niczego wielkiego.</h2>
+        <p class="story-copy">
+          Właściwie chciałbym po prostu jednego normalnego dnia z Tobą.
+        </p>
+
+        <div class="day-list">
+          <button data-reveal><span>☕</span> pogadać bez patrzenia na godzinę</button>
+          <button data-reveal><span>↟</span> pójść razem na spacer</button>
+          <button data-reveal><span>♡</span> w końcu Cię przytulić</button>
+          <button data-reveal><span>▶</span> obejrzeć razem jakiś serial</button>
+          <button data-reveal><span>…</span> i może ukraść Ci jednego buziaka, jeśli byś pozwoliła</button>
+        </div>
+
+        <button class="ghost-btn" data-next disabled>dalej →</button>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="screen" id="screen-7">
+      <div class="story-shell">
+        <p class="step-label">07, po co zrobiłem tę stronę?</p>
+        <h2>Nie po to, żebyś musiała mi na coś odpowiedzieć.</h2>
+
+        <div class="final-before-game">
+          <p>Nie po to, żeby coś przyspieszać.</p>
+          <p>Nie po to, żeby wywierać na Tobie presję.</p>
+          <p>Po prostu chciałem, żebyś wiedziała jedną rzecz.</p>
+        </div>
+
+        <button class="primary-btn" id="openGame">
+          dobra, ale najpierw mała gra
+          <span>↓</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- GRA -->
+    <section class="game-section hidden" id="gameSection">
+      <div class="game-shell">
+        <p class="step-label">ostatni etap, dwa końce Polski</p>
+        <h2>Przeprowadź serce do Mai.</h2>
+        <p class="game-intro">
+          Zbierz po drodze wszystkie 5 słów. Na telefonie użyj strzałek pod planszą,
+          na komputerze możesz też użyć klawiszy ← →.
+        </p>
+
+        <div class="game-hud">
+          <span id="wordCounter">słowa: 0 / 5</span>
+          <span id="distanceText">jeszcze kawałek…</span>
+        </div>
+
+        <div class="game-board" id="gameBoard" tabindex="0" aria-label="Minigra Dwa końce Polski">
+          <div class="endpoint start-point">
+            <div class="avatar">A</div>
+            <span>Adam</span>
+          </div>
+
+          <div class="road">
+            <div class="road-line"></div>
+            <div class="word-token" data-pos="18" data-word="mimo">mimo</div>
+            <div class="word-token" data-pos="34" data-word="tej">tej</div>
+            <div class="word-token" data-pos="50" data-word="całej">całej</div>
+            <div class="word-token" data-pos="67" data-word="odległości">odległości</div>
+            <div class="word-token" data-pos="82" data-word="zależy">zależy</div>
+
+            <div class="player" id="player" style="left: 2%;" aria-label="Serce gracza">♥</div>
+          </div>
+
+          <div class="endpoint end-point">
+            <div class="avatar">M</div>
+            <span>Maja</span>
+          </div>
+        </div>
+
+        <div class="mobile-controls">
+          <button id="moveLeft" aria-label="Ruch w lewo">←</button>
+          <button id="moveRight" aria-label="Ruch w prawo">→</button>
+        </div>
+
+        <div class="collected-words" id="collectedWords" aria-live="polite">
+          <span>_</span><span>_</span><span>_</span><span>_</span><span>_</span>
+        </div>
+
+        <button class="ghost-btn restart-btn" id="restartGame">zacznij od nowa</button>
+      </div>
+    </section>
+
+    <!-- FINAŁ -->
+    <section class="ending hidden" id="ending">
+      <div class="ending-inner">
+        <p class="eyebrow">udało Ci się dojść do końca</p>
+        <h2>Maja,</h2>
+        <p class="ending-main">bardzo mi na Tobie zależy.</p>
+
+        <p class="ending-copy">
+          Nie wiem jeszcze, co z tego wszystkiego będzie i nie chcę niczego przyspieszać.
+          Chcę po prostu dalej Cię poznawać, pisać z Tobą po nocach i kiedyś zamiast mówić,
+          że chciałbym Cię przytulić, naprawdę móc to zrobić.
+        </p>
+
+        <div class="signature">
+          <span>Twój idiota</span>
+          <span class="heart-sign">♡</span>
+        </div>
+
+        <button class="tiny-btn" id="secretBtn">jeszcze jedno małe kliknięcie</button>
+        <p class="secret-message" id="secretMessage">
+          Dziękuję Ci za spokój, który mi dajesz. Naprawdę nie wiesz, jak dużo to dla mnie znaczy.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
